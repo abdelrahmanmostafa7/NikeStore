@@ -1,9 +1,10 @@
+import Hero from "./components/Hero"
+import {heroapi} from "./data/data.js"
 function App() {
-
   return (
-    <div>
-      Hello world!
-    </div>
+    <main>
+      <Hero heroapi={heroapi}/>
+    </main>
   )
 }
 
