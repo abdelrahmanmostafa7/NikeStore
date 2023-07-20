@@ -371,7 +371,14 @@ const footerAPI = {
             { link: "Nike Jouneral" },
             { link: "Send Us Feeback" },
         ],
-    ]
+    ],
+    sociallinks: [
+        { icon: facebook },
+        { icon: messenger },
+        { icon: instagram },
+        { icon: twitter },
+        { icon: youtube },
+    ],
 };
 
 

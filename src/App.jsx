@@ -1,6 +1,6 @@
 import './index.css'
+import { heroapi, popularsales, toprateslaes, highlight, sneaker, story, footerAPI } from "./data/data.js"
 import Hero from "./components/Hero"
-import { heroapi, popularsales, toprateslaes, highlight, sneaker , story} from "./data/data.js"
 import Sales from './components/Sales'
 import FlexContext from './components/FlexContext'
 import Stories from './components/Stories'
@@ -14,7 +14,7 @@ function App() {
       <Sales endpoint={toprateslaes} />
       <FlexContext endpoint={sneaker} />
       <Stories story={story}/>
-      <Footer />s
+      <Footer footerAPI={footerAPI}/>
     </main>
   )
 }
