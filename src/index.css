@@ -77,4 +77,23 @@
     @apply transition-all duration-700 ease-in-out cursor-pointer;
   }
 
+  /* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff8f8;
+    border-radius: 5px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3173d7;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-in-out; /* add transition property */
+}
+
+
 }
