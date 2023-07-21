@@ -10,6 +10,8 @@ const Stories = ({ story: { title, news } }) => {
     const splideOptions = {
         perPage: 4,
         perMove: 1,
+        speed:500,
+        delay:3000,
         type: 'loop',
         rewind: true,
         keyboard: 'global',
@@ -32,7 +34,7 @@ const Stories = ({ story: { title, news } }) => {
                     <Splide options={splideOptions}>
                         {news.map((val, i) => (
                             <SplideSlide key={i} className="mb-0.5">
-                                <div className="relative grid items-center gap-4 pb-2 rounded-lg shadow shadow-slate-200 ring-1 ring-slate-200">
+                                <div className="relative grid items-center gap-4 pb-2 mb-2 rounded-lg shadow shadow-slate-200 ring-1 ring-slate-200">
                                     <div className="flex items-center justify-center">
                                         <img
                                             src={val.img}

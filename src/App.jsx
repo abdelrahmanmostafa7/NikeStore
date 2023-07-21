@@ -5,9 +5,11 @@ import Sales from './components/Sales'
 import FlexContext from './components/FlexContext'
 import Stories from './components/Stories'
 import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 function App() {
   return (
     <main className='flex flex-col gap-20 relative'>
+      <Navbar />
       <Hero heroapi={heroapi} />
       <Sales endpoint={popularsales} ifExists />
       <FlexContext endpoint={highlight} ifExists />
